@@ -1,0 +1,177 @@
+/* Base Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container Layout */
+.checkout-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+/* Sections */
+.checkout-form-section {
+    flex: 1.5;
+    padding: 40px;
+    min-width: 320px;
+}
+
+.order-summary-section {
+    flex: 1;
+    background-color: #fafbfc;
+    padding: 40px;
+    border-left: 1px solid #e1e4e8;
+    min-width: 300px;
+}
+
+/* Typography & Elements */
+h2 {
+    margin-bottom: 24px;
+    color: #1a1a1a;
+}
+
+h3 {
+    margin: 20px 0 15px 0;
+    color: #1a1a1a;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #e1e4e8;
+    margin: 25px 0;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #586069;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #0366d6;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.col-6 {
+    flex: 1;
+}
+
+/* Button */
+.btn-submit {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #218838;
+}
+
+/* Order Summary Details */
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-name {
+    font-weight: 600;
+    color: #24292e;
+}
+
+.item-qty {
+    font-size: 0.85rem;
+    color: #6a737d;
+}
+
+.item-price {
+    font-weight: 600;
+    color: #24292e;
+}
+
+/* Totals styling */
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #586069;
+}
+
+.free-shipping {
+    color: #28a745;
+    font-weight: 600;
+}
+
+.final-total {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .checkout-container {
+        flex-direction: column;
+    }
+    .order-summary-section {
+        border-left: none;
+        border-top: 1px solid #e1e4e8;
+    }
+}
